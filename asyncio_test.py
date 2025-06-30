@@ -342,6 +342,252 @@ async def run_all_tests():
     
     logger.info("🏁 모든 테스트 완료")
 
-# 테스트 실행
+# # 테스트 실행
+# if __name__ == "__main__":
+#     asyncio.run(run_all_tests())
+
+# -------------------------------------------------------------
+
+# 고급 시나리오: 중첩된 병렬처리 취소 테스트
+async def nested_parallel_task(parent_id: str, sub_task_count: int = 3):
+    """병렬처리 안에서 또 다른 병렬처리를 수행하는 함수"""
+    try:
+        logger.info(f"🔀 [{parent_id}] 중첩 병렬 작업 시작 (하위 작업 {sub_task_count}개)")
+        
+        # 여러 하위 작업들을 병렬로 실행
+        sub_tasks = []
+        for i in range(sub_task_count):
+            sub_task_id = f"{parent_id}_sub_{i+1}"
+            sub_task = asyncio.create_task(
+                deep_nested_task(sub_task_id, duration=5)
+            )
+            sub_tasks.append(sub_task)
+        
+        # 모든 하위 작업 완료까지 대기
+        results = await asyncio.gather(*sub_tasks)
+        
+        logger.info(f"✅ [{parent_id}] 모든 하위 작업 완료")
+        return f"완료된 하위 작업들: {results}"
+        
+    except asyncio.CancelledError:
+        logger.info(f"🚫 [{parent_id}] 중첩 병렬 작업 취소됨")
+        # 하위 작업들도 모두 취소
+        for task in sub_tasks:
+            if not task.done():
+                task.cancel()
+        
+        # 하위 작업들의 취소 완료까지 대기
+        await asyncio.gather(*sub_tasks, return_exceptions=True)
+        logger.info(f"🧹 [{parent_id}] 모든 하위 작업 취소 완료")
+        raise
+
+async def deep_nested_task(task_id: str, duration: int = 5):
+    """깊은 중첩 레벨의 작업"""
+    try:
+        logger.info(f"🎯 [{task_id}] 깊은 중첩 작업 시작")
+        
+        # 추가 병렬 작업들 생성
+        micro_tasks = []
+        for i in range(2):  # 각 하위 작업마다 2개의 마이크로 작업
+            micro_task_id = f"{task_id}_micro_{i+1}"
+            micro_task = asyncio.create_task(
+                micro_task_worker(micro_task_id, duration=duration)
+            )
+            micro_tasks.append(micro_task)
+        
+        # 마이크로 작업들 완료 대기
+        results = await asyncio.gather(*micro_tasks)
+        
+        logger.info(f"✅ [{task_id}] 깊은 중첩 작업 완료")
+        return f"{task_id}_완료"
+        
+    except asyncio.CancelledError:
+        logger.info(f"🚫 [{task_id}] 깊은 중첩 작업 취소됨")
+        # 마이크로 작업들도 취소
+        for task in micro_tasks:
+            if not task.done():
+                task.cancel()
+        
+        await asyncio.gather(*micro_tasks, return_exceptions=True)
+        logger.info(f"🧹 [{task_id}] 마이크로 작업들 취소 완료")
+        raise
+
+async def micro_task_worker(task_id: str, duration: int = 5):
+    """가장 작은 단위의 작업 (실제 작업 수행)"""
+    try:
+        logger.info(f"⚡ [{task_id}] 마이크로 작업 시작")
+        for i in range(duration):
+            await asyncio.sleep(1)
+            logger.info(f"⏱️ [{task_id}] 진행 중... ({i+1}/{duration})")
+        
+        logger.info(f"✅ [{task_id}] 마이크로 작업 완료")
+        return f"{task_id}_결과"
+        
+    except asyncio.CancelledError:
+        logger.info(f"🛑 [{task_id}] 마이크로 작업 취소됨")
+        raise
+
+# 고급 테스트 시나리오들
+async def test_scenario_5_nested_parallel_cancel():
+    """시나리오 5: 중첩된 병렬처리 취소"""
+    logger.info("=" * 60)
+    logger.info("🧪 테스트 시나리오 5: 중첩된 병렬처리 취소")
+    logger.info("=" * 60)
+    
+    task_manager = get_task_manager()
+    
+    # 중첩된 병렬 작업 시작
+    complex_task = await task_manager.add(
+        "complex_user", 
+        nested_parallel_task("복합작업_1", sub_task_count=3)
+    )
+    
+    # 3초 후 취소 (하위 작업들이 실행 중일 때)
+    await asyncio.sleep(3)
+    logger.info("🛑 복합 작업 취소 요청")
+    
+    # 직접 태스크 취소
+    complex_task.cancel()
+    
+    try:
+        await complex_task
+    except asyncio.CancelledError:
+        logger.info("✅ 복합 작업 취소 완료")
+    
+    await task_manager.remove("complex_user")
+
+async def test_scenario_6_multiple_nested_cancel():
+    """시나리오 6: 여러 중첩 작업 동시 취소"""
+    logger.info("=" * 60)
+    logger.info("🧪 테스트 시나리오 6: 여러 중첩 작업 동시 취소")
+    logger.info("=" * 60)
+    
+    task_manager = get_task_manager()
+    
+    # 여러 복합 작업들 시작
+    complex_tasks = []
+    for i in range(3):
+        task_key = f"complex_user_{i+1}"
+        task = await task_manager.add(
+            task_key,
+            nested_parallel_task(f"복합작업_{i+1}", sub_task_count=2)
+        )
+        complex_tasks.append((task_key, task))
+    
+    # 2초 후 모든 작업 취소
+    await asyncio.sleep(2)
+    logger.info("🛑 모든 복합 작업 취소 요청")
+    
+    await task_manager.cancel_all()
+    logger.info("✅ 모든 복합 작업 취소 완료")
+
+async def test_scenario_7_cascade_cancel_with_replacement():
+    """시나리오 7: 중첩 작업 취소 후 새 작업 시작"""
+    logger.info("=" * 60)
+    logger.info("🧪 테스트 시나리오 7: 중첩 작업 취소 후 새 작업 시작")
+    logger.info("=" * 60)
+    
+    task_manager = get_task_manager()
+    
+    # 첫 번째 복합 작업 시작
+    await task_manager.add(
+        "user_cascade",
+        nested_parallel_task("첫번째_복합작업", sub_task_count=4)
+    )
+    
+    await asyncio.sleep(2)  # 작업이 진행되도록 대기
+    
+    # 새로운 복합 작업으로 교체 (이전 작업은 자동 취소됨)
+    logger.info("🔄 새로운 복합 작업으로 교체")
+    final_task = await task_manager.add(
+        "user_cascade",
+        nested_parallel_task("두번째_복합작업", sub_task_count=2)
+    )
+    
+    # 새 작업 완료까지 대기
+    try:
+        result = await final_task
+        logger.info(f"🎉 최종 결과: {result}")
+    except Exception as e:
+        logger.error(f"❌ 오류: {e}")
+    
+    await task_manager.remove("user_cascade")
+
+async def test_scenario_8_partial_cancel_recovery():
+    """시나리오 8: 부분 취소 후 복구 테스트"""
+    logger.info("=" * 60)
+    logger.info("🧪 테스트 시나리오 8: 부분 취소 후 복구")
+    logger.info("=" * 60)
+    
+    task_manager = get_task_manager()
+    
+    # 여러 독립적인 중첩 작업들 시작
+    users = ["user_A", "user_B", "user_C"]
+    tasks = {}
+    
+    for user in users:
+        task = await task_manager.add(
+            user,
+            nested_parallel_task(f"{user}_작업", sub_task_count=2)
+        )
+        tasks[user] = task
+    
+    await asyncio.sleep(1.5)  # 작업들이 시작되도록 대기
+    
+    # user_B만 수동으로 취소
+    logger.info("🎯 user_B 작업만 선택적 취소")
+    tasks["user_B"].cancel()
+    
+    try:
+        await tasks["user_B"]
+    except asyncio.CancelledError:
+        logger.info("✅ user_B 작업 취소 완료")
+    
+    await task_manager.remove("user_B")
+    
+    # 나머지 작업들은 완료까지 대기
+    remaining_users = ["user_A", "user_C"]
+    for user in remaining_users:
+        try:
+            result = await tasks[user]
+            logger.info(f"✅ {user} 완료: 성공")
+            await task_manager.remove(user)
+        except Exception as e:
+            logger.error(f"❌ {user} 오류: {e}")
+
+# 고급 테스트 실행 함수
+async def run_advanced_tests():
+    """고급 중첩 취소 테스트 실행"""
+    logger.info("🎯 고급 중첩 취소 테스트 시작")
+    
+    try:
+        await test_scenario_5_nested_parallel_cancel()
+        await asyncio.sleep(1)
+        
+        await test_scenario_6_multiple_nested_cancel()
+        await asyncio.sleep(1)
+        
+        await test_scenario_7_cascade_cancel_with_replacement()
+        await asyncio.sleep(1)
+        
+        await test_scenario_8_partial_cancel_recovery()
+        
+    except Exception as e:
+        logger.error(f"❌ 고급 테스트 중 오류: {e}")
+    
+    logger.info("🏁 모든 고급 테스트 완료")
+
+# 전체 테스트 실행 (기본 + 고급)
+async def run_complete_tests():
+    """모든 테스트 (기본 + 고급) 실행"""
+    await run_all_tests()
+    logger.info("\n" + "🔥" * 20 + " 고급 테스트 시작 " + "🔥" * 20)
+    await run_advanced_tests()
+
+# 고급 테스트만 실행하려면 이 부분의 주석을 해제하세요
 if __name__ == "__main__":
-    asyncio.run(run_all_tests())
+    asyncio.run(run_advanced_tests())
+
+# 전체 테스트 실행하려면 이 부분의 주석을 해제하세요
+# if __name__ == "__main__":
+#     asyncio.run(run_complete_tests())
