@@ -2,6 +2,106 @@ import json
 from bs4 import BeautifulSoup
 import aiohttp
 import asyncio
+import re
+from typing import Set
+
+def _is_meaningful_text(text: str, min_length: int = 10, max_length: int = 1000) -> bool:
+    """
+    의미 있는 텍스트인지 확인하는 함수
+    
+    Args:
+        text: 검사할 텍스트
+        min_length: 최소 텍스트 길이
+        max_length: 최대 텍스트 길이
+    
+    Returns:
+        bool: 의미 있는 텍스트인지 여부
+    """
+    # 공백 제거
+    cleaned_text = text.strip()
+    
+    # 길이 체크
+    if not (min_length <= len(cleaned_text) <= max_length):
+        return False
+    
+    # 특수문자나 HTML 태그만 있는 경우 제외
+    if re.match(r'^[\s\W]+$', cleaned_text):
+        return False
+    
+    # 중복된 특수문자가 많은 경우 제외
+    if len(re.findall(r'[!@#$%^&*(),.?":{}|<>]{3,}', cleaned_text)) > 0:
+        return False
+    
+    # 의미 없는 문자 반복 체크
+    if re.search(r'(.)\1{4,}', cleaned_text):
+        return False
+    
+    return True
+
+def _filter_redundant_text(texts: list[str]) -> list[str]:
+    """
+    중복되거나 비슷한 텍스트를 필터링하는 함수
+    
+    Args:
+        texts: 필터링할 텍스트 리스트
+    
+    Returns:
+        list[str]: 필터링된 텍스트 리스트
+    """
+    filtered_texts = []
+    seen_content = set()
+    
+    for text in texts:
+        # 텍스트 정규화 (공백 제거, 소문자 변환)
+        normalized = ' '.join(text.lower().split())
+        
+        # 이미 비슷한 내용이 있는지 확인
+        is_duplicate = False
+        for seen in seen_content:
+            # 자카드 유사도 계산
+            set1 = set(normalized.split())
+            set2 = set(seen.split())
+            similarity = len(set1 & set2) / len(set1 | set2) if set1 | set2 else 0
+            
+            if similarity > 0.7:  # 70% 이상 유사하면 중복으로 처리
+                is_duplicate = True
+                break
+        
+        if not is_duplicate:
+            filtered_texts.append(text)
+            seen_content.add(normalized)
+    
+    return filtered_texts
+
+def _should_exclude_element(element: BeautifulSoup, excluded_classes: Set[str]) -> bool:
+    """
+    제외해야 할 HTML 요소인지 확인하는 함수
+    
+    Args:
+        element: 검사할 BeautifulSoup 요소
+        excluded_classes: 제외할 클래스명 집합
+    
+    Returns:
+        bool: 제외해야 할 요소인지 여부
+    """
+    # 제외할 태그 목록
+    excluded_tags = {'script', 'style', 'nav', 'footer', 'header', 'aside', 'noscript'}
+    
+    # 요소의 태그가 제외 목록에 있는 경우
+    if element.name in excluded_tags:
+        return True
+    
+    # 요소의 클래스가 제외 목록에 있는 경우
+    if element.get('class'):
+        if any(c in excluded_classes for c in element.get('class')):
+            return True
+    
+    # 숨겨진 요소 제외
+    style = element.get('style', '')
+    if 'display: none' in style or 'visibility: hidden' in style:
+        return True
+    
+    return False
 
 async def create_search_snippets(soup: BeautifulSoup, search_query: str, max_snippets: int = 3, snippet_length: int = 150) -> list[dict]:
     """
@@ -26,6 +126,13 @@ async def create_search_snippets(soup: BeautifulSoup, search_query: str, max_sni
     snippets = []
     search_terms = search_query.lower().split()
     
+    # 제외할 클래스 정의
+    excluded_classes = {
+        'ad', 'advertisement', 'banner', 'cookie', 'popup', 'modal',
+        'menu', 'nav', 'footer', 'header', 'sidebar', 'social',
+        'comment', 'related', 'share', 'widget', 'toolbar', 'copyright'
+    }
+    
     try:
         # 1단계: 메타 데이터에서 관련 텍스트 추출
         meta_selectors = {
@@ -40,7 +147,7 @@ async def create_search_snippets(soup: BeautifulSoup, search_query: str, max_sni
             elements = soup.select(selector)
             for element in elements:
                 text = element.get_text().strip() if source == 'title' else element.get('content', '').strip()
-                if text:
+                if text and _is_meaningful_text(text):
                     score = _calculate_relevance_score(text, search_terms)
                     if score > 0:
                         snippet = _create_snippet(text, search_terms, snippet_length)
@@ -50,31 +157,42 @@ async def create_search_snippets(soup: BeautifulSoup, search_query: str, max_sni
                             "relevance_score": score
                         })
         
-        # 2단계: 주요 텍스트 컨텐츠에서 추출
-        content_selectors = {
-            'heading': ['h1', 'h2', 'h3'],
-            'paragraph': ['p'],
-            'article': ['article'],
-            'section': ['section'],
-            'list': ['li']
-        }
+        # 2단계: 주요 텍스트 컨텐츠에서 추출 (필터링 추가)
+        main_content = []
         
-        for source, selectors in content_selectors.items():
-            for selector in selectors:
-                elements = soup.select(selector)
-                for element in elements:
-                    text = element.get_text().strip()
-                    if text and len(text) >= 10:  # 너무 짧은 텍스트 제외
-                        score = _calculate_relevance_score(text, search_terms)
-                        if score > 0:
-                            snippet = _create_snippet(text, search_terms, snippet_length)
-                            snippets.append({
-                                "text": snippet,
-                                "source": f"{source}",
-                                "relevance_score": score
-                            })
+        # 주요 콘텐츠 영역 찾기
+        content_containers = soup.find_all(['article', 'main', 'div'], class_=lambda x: x and 'content' in x.lower())
+        if not content_containers:
+            content_containers = [soup]
         
-        # 3단계: JSON-LD 데이터에서 추출
+        for container in content_containers:
+            # 제외할 요소 제거
+            for element in container.find_all(True):
+                if _should_exclude_element(element, excluded_classes):
+                    element.decompose()
+            
+            # 텍스트 추출
+            paragraphs = container.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+            for p in paragraphs:
+                text = p.get_text().strip()
+                if _is_meaningful_text(text):
+                    main_content.append(text)
+        
+        # 중복 제거
+        main_content = _filter_redundant_text(main_content)
+        
+        # 스니펫 생성
+        for text in main_content:
+            score = _calculate_relevance_score(text, search_terms)
+            if score > 0:
+                snippet = _create_snippet(text, search_terms, snippet_length)
+                snippets.append({
+                    "text": snippet,
+                    "source": "main_content",
+                    "relevance_score": score
+                })
+        
+        # 3단계: JSON-LD 데이터에서 추출 (필터링 추가)
         json_ld_scripts = soup.find_all('script', type='application/ld+json')
         for script in json_ld_scripts:
             try:
@@ -90,7 +208,7 @@ async def create_search_snippets(soup: BeautifulSoup, search_query: str, max_sni
                     ]
                     
                     for text in text_fields:
-                        if isinstance(text, str) and text.strip():
+                        if isinstance(text, str) and _is_meaningful_text(text):
                             score = _calculate_relevance_score(text, search_terms)
                             if score > 0:
                                 snippet = _create_snippet(text, search_terms, snippet_length)
