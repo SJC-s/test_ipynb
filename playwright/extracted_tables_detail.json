@@ -1,0 +1,1404 @@
+{
+  "extraction_info": {
+    "url": "https://tago.kr/service/ioniq6_monthly.htm",
+    "timestamp": "2025-07-04T16:28:07.224701",
+    "total_tables": 3
+  },
+  "tables": [
+    {
+      "table_id": 1,
+      "title": "현대 아이오닉6 롱레인지 프레스티지",
+      "structure": {
+        "headers": [],
+        "data_rows": [
+          {
+            "row_id": 1,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "차종",
+                "html": "<th scope=\"row\">차종</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "현대 아이오닉6 롱레인지 프레스티지Hyundai IONIQ 6 Long Range Prestige",
+                "html": "<td class=\"noline\" colspan=\"3\"><p>현대 아이오닉6 롱레인지 프레스티지</p><h3>Hyundai IONIQ 6 Long Range Prestige</h3></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 3,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "colspan": "3",
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 2,
+              "th_count": 1,
+              "td_count": 1,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 2,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "차량 유형",
+                "html": "<th scope=\"row\">차량 유형</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "후륜구동 세단",
+                "html": "<td>후륜구동 세단</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "주행거리",
+                "html": "<th scope=\"row\">주행거리</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "524km",
+                "html": "<td class=\"noline\">524km</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 3,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "최고속력",
+                "html": "<th scope=\"row\">최고속력</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "185km/h",
+                "html": "<td>185km/h</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "배터리 용량",
+                "html": "<th scope=\"row\">배터리 용량</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "77.4kWh",
+                "html": "<td class=\"noline\">77.4kWh</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 4,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "제로백",
+                "html": "<th scope=\"row\">제로백</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "5.1초",
+                "html": "<td class=\"noline\">5.1초</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              },
+              {
+                "cell_id": 3,
+                "text": "복합전비",
+                "html": "<th scope=\"row\">복합전비</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "5.2km/kWh",
+                "html": "<td class=\"noline\">5.2km/kWh</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "row_count": 4,
+        "column_count": 2,
+        "has_header": false,
+        "has_row_headers": true,
+        "table_type": "row_headers"
+      }
+    },
+    {
+      "table_id": 2,
+      "title": "현대 아이오닉6 롱레인지 프레스티지 월렌트 가격표",
+      "structure": {
+        "headers": [
+          [
+            {
+              "text": "번호",
+              "colspan": 1,
+              "rowspan": 1
+            },
+            {
+              "text": "내역",
+              "colspan": 1,
+              "rowspan": 1
+            },
+            {
+              "text": "□ 1개월",
+              "colspan": 1,
+              "rowspan": 1
+            },
+            {
+              "text": "□ 2개월",
+              "colspan": 1,
+              "rowspan": 1
+            },
+            {
+              "text": "□ 3개월",
+              "colspan": 1,
+              "rowspan": 1
+            },
+            {
+              "text": "□ 6개월",
+              "colspan": 1,
+              "rowspan": 1
+            },
+            {
+              "text": "□ 12개월",
+              "colspan": 1,
+              "rowspan": 1
+            }
+          ]
+        ],
+        "data_rows": [
+          {
+            "row_id": 1,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "1",
+                "html": "<td class=\"text-center\">1</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-center"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-center"
+                  ]
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "보증금(만기환급)",
+                "html": "<td>보증금(만기환급)</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "550,000원",
+                "html": "<td class=\"text-right\">550,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "550,000원",
+                "html": "<td class=\"text-right\">550,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 5,
+                "text": "550,000원",
+                "html": "<td class=\"text-right\">550,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 6,
+                "text": "550,000원",
+                "html": "<td class=\"text-right\">550,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 7,
+                "text": "550,000원",
+                "html": "<td class=\"text-right noline\">550,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right",
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right",
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 7,
+              "th_count": 0,
+              "td_count": 7,
+              "has_mixed_tags": false
+            }
+          },
+          {
+            "row_id": 2,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "2",
+                "html": "<td class=\"text-center\"><strong>2</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-center"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-center"
+                  ]
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "월 이용요금",
+                "html": "<td><strong>월 이용요금</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "1,155,000원",
+                "html": "<td class=\"text-right\"><strong>1,155,000원</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "1,100,000원",
+                "html": "<td class=\"text-right\"><strong>1,100,000원</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 5,
+                "text": "1,045,000원",
+                "html": "<td class=\"text-right\"><strong>1,045,000원</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 6,
+                "text": "990,000원",
+                "html": "<td class=\"text-right\"><strong>990,000원</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 7,
+                "text": "880,000원",
+                "html": "<td class=\"text-right noline\"><strong>880,000원</strong></td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right",
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right",
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 7,
+              "th_count": 0,
+              "td_count": 7,
+              "has_mixed_tags": false
+            }
+          },
+          {
+            "row_id": 3,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "3",
+                "html": "<td class=\"text-center\">3</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-center"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-center"
+                  ]
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "개월",
+                "html": "<td>개월</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "1개월",
+                "html": "<td class=\"text-right\">1개월</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "2개월",
+                "html": "<td class=\"text-right\">2개월</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 5,
+                "text": "3개월",
+                "html": "<td class=\"text-right\">3개월</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 6,
+                "text": "6개월",
+                "html": "<td class=\"text-right\">6개월</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 7,
+                "text": "12개월",
+                "html": "<td class=\"text-right noline\">12개월</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right",
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right",
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 7,
+              "th_count": 0,
+              "td_count": 7,
+              "has_mixed_tags": false
+            }
+          },
+          {
+            "row_id": 4,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "4",
+                "html": "<td class=\"text-center\">4</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-center"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-center"
+                  ]
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "월 이용요금 소계",
+                "html": "<td>월 이용요금 소계</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "1,155,000원",
+                "html": "<td class=\"text-right\">1,155,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "2,200,000원",
+                "html": "<td class=\"text-right\">2,200,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 5,
+                "text": "3,135,000원",
+                "html": "<td class=\"text-right\">3,135,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 6,
+                "text": "5,940,000원",
+                "html": "<td class=\"text-right\">5,940,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 7,
+                "text": "10,560,000원",
+                "html": "<td class=\"text-right noline\">10,560,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right",
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right",
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 7,
+              "th_count": 0,
+              "td_count": 7,
+              "has_mixed_tags": false
+            }
+          },
+          {
+            "row_id": 5,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "5",
+                "html": "<td class=\"text-center\">5</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-center"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-center"
+                  ]
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "계약시 납부금",
+                "html": "<td>계약시 납부금</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "1,700,000원",
+                "html": "<td class=\"text-right\">1,700,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "1,650,000원",
+                "html": "<td class=\"text-right\">1,650,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 5,
+                "text": "1,595,000원",
+                "html": "<td class=\"text-right\">1,595,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 6,
+                "text": "1,540,000원",
+                "html": "<td class=\"text-right\">1,540,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right"
+                  ]
+                }
+              },
+              {
+                "cell_id": 7,
+                "text": "1,430,000원",
+                "html": "<td class=\"text-right noline\">1,430,000원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "text-right",
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "text-right",
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 7,
+              "th_count": 0,
+              "td_count": 7,
+              "has_mixed_tags": false
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "row_count": 5,
+        "column_count": 7,
+        "has_header": true,
+        "has_row_headers": false,
+        "table_type": "column_headers"
+      }
+    },
+    {
+      "table_id": 3,
+      "title": "타고 구매형 장기렌터카의 보험혜택!",
+      "structure": {
+        "headers": [],
+        "data_rows": [
+          {
+            "row_id": 1,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "운전자 범위",
+                "html": "<th scope=\"row\">운전자 범위</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "개인 : 본인 및 가족법인 : 소속 임직원",
+                "html": "<td>개인 : 본인 및 가족<br/>법인 : 소속 임직원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "운전자 연령",
+                "html": "<th scope=\"row\">운전자 연령</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "만 26세 이상",
+                "html": "<td class=\"noline\">만 26세 이상</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 2,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "대인배상 (대인 I)",
+                "html": "<th scope=\"row\">대인배상 (대인 I)</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "자동차손해배상보장법시행령에서 정한 금액",
+                "html": "<td>자동차손해배상보장법 <br/>시행령에서 정한 금액</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "대인배상 (대인 II)",
+                "html": "<th scope=\"row\">대인배상 (대인 II)</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "무한",
+                "html": "<td class=\"noline\">무한</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 3,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "대물",
+                "html": "<th scope=\"row\">대물</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "1사고당3억원(일부 부담금 없음)",
+                "html": "<td>1사고당 <span class=\"insurancePreferenceMoney\">3</span>억원 <br/>(일부 부담금 없음)</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "자기신체사고",
+                "html": "<th rowspan=\"3\" scope=\"row\">자기신체사고</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 3,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row",
+                  "rowspan": "3"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "사망(인당) : 1억원",
+                "html": "<td class=\"noline\">사망(인당) : 1억원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 4,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "무보험",
+                "html": "<th scope=\"row\">무보험</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "1인당 최고 2억원",
+                "html": "<td>1인당 최고 2억원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "부상(인당) : 1,500만원",
+                "html": "<td class=\"noline\">부상(인당) : 1,500만원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 3,
+              "th_count": 1,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 5,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "긴급출동",
+                "html": "<th scope=\"row\">긴급출동</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "연 5회",
+                "html": "<td>연 5회</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "후유장애(인당) : 1억원",
+                "html": "<td class=\"noline\">후유장애(인당) : 1억원</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 3,
+              "th_count": 1,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          },
+          {
+            "row_id": 6,
+            "cells": [
+              {
+                "cell_id": 1,
+                "text": "차량손해 면책(자기부담금)",
+                "html": "<th scope=\"row\">차량손해 면책<br/>(자기부담금)</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 2,
+                "text": "차대차 사고 : 50만원/건단독 차사고 : 100만원/건",
+                "html": "<td>차대차 사고 : 50만원/건<br/>단독 차사고 : 100만원/건</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {}
+              },
+              {
+                "cell_id": 3,
+                "text": "긴급출동 전화번호",
+                "html": "<th scope=\"row\">긴급출동 전화번호</th>",
+                "tag_name": "th",
+                "is_header": true,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [],
+                "style": "",
+                "attributes": {
+                  "scope": "row"
+                }
+              },
+              {
+                "cell_id": 4,
+                "text": "1661-7977",
+                "html": "<td class=\"noline\">1661-7977</td>",
+                "tag_name": "td",
+                "is_header": false,
+                "colspan": 1,
+                "rowspan": 1,
+                "classes": [
+                  "noline"
+                ],
+                "style": "",
+                "attributes": {
+                  "class": [
+                    "noline"
+                  ]
+                }
+              }
+            ],
+            "cell_statistics": {
+              "total_cells": 4,
+              "th_count": 2,
+              "td_count": 2,
+              "has_mixed_tags": true
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "row_count": 6,
+        "column_count": 4,
+        "has_header": false,
+        "has_row_headers": true,
+        "table_type": "row_headers"
+      }
+    }
+  ]
+}
