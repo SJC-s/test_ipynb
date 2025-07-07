@@ -83,27 +83,8 @@ def read_urls_from_file(filename):
                     urls.append(line)
     except FileNotFoundError:
         print(f"❌ {filename} 파일을 찾을 수 없습니다.")
-        # 기본 URL 파일 생성
-        create_sample_urls_file(filename)
-        return []
-    
     return urls
 
-def create_sample_urls_file(filename):
-    """샘플 URL 파일 생성"""
-    sample_urls = [
-        "# URL 목록 파일 - 한 줄에 하나씩 입력하세요",
-        "# 주석은 #으로 시작합니다",
-        "",
-        "https://kr.youme.com/sub_people/peopleopen.aspx?idx=204&tidx=0&dir=people",
-        "https://tago.kr/service/ioniq6_monthly.htm",
-        "# 추가 URL들을 여기에 입력하세요",
-    ]
-    
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(sample_urls))
-    
-    print(f"📝 샘플 {filename} 파일을 생성했습니다. URL을 추가하고 다시 실행하세요.")
 
 def get_safe_filename(url):
     """URL에서 안전한 파일명 생성"""
