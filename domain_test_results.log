@@ -1,0 +1,484 @@
+2025-07-08 09:19:13,150 - INFO - 테스트 시작: https://dev.han.kr/chat/search.htm
+2025-07-08 09:19:45,716 - INFO - 테스트 시작: https://dev.han.kr/chat/search.htm
+2025-07-08 09:21:30,789 - INFO - 테스트 시작: https://dev.han.kr/chat/search.htm
+2025-07-08 09:21:55,286 - ERROR - dev.han.kr/chat/search.htm: 검색 입력창을 찾을 수 없습니다.
+2025-07-08 09:21:55,321 - INFO - 테스트 시작: https://test.han.kr/chat/search.htm
+2025-07-08 09:22:28,702 - ERROR - test.han.kr/chat/search.htm: 검색 입력창을 찾을 수 없습니다.
+2025-07-08 09:22:28,760 - INFO - 테스트 시작: https://ipet.han.kr/chat/search.htm
+2025-07-08 09:24:00,507 - INFO - 테스트 시작: https://dev.han.kr/chat/search.htm
+2025-07-08 09:24:25,621 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:24:28,681 - INFO - dev.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:24:28,733 - INFO - 테스트 시작: https://test.han.kr/chat/search.htm
+2025-07-08 09:24:51,499 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:24:54,568 - INFO - test.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:24:54,618 - INFO - 테스트 시작: https://ipet.han.kr/chat/search.htm
+2025-07-08 09:25:17,430 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:25:20,488 - INFO - ipet.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:25:20,522 - INFO - 테스트 시작: https://gwangjin.han.kr/chat/search.htm
+2025-07-08 09:25:43,415 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:25:46,476 - INFO - gwangjin.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:25:46,522 - INFO - 테스트 시작: https://oka.han.kr/chat/search.htm
+2025-07-08 09:26:10,853 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:26:13,917 - INFO - oka.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:26:13,957 - INFO - 테스트 시작: https://gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:26:16,907 - ERROR - gwi.asadal.com/workmanage/chat/search.htm 테스트 중 오류 발생: Alert Text: 암호가 일치하지 않습니다.
+Message: unexpected alert open: {Alert text : 암호가 일치하지 않습니다.}
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709af110c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:26:17,003 - INFO - 테스트 시작: https://nara1.kr/art/search.htm
+2025-07-08 09:26:28,002 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709aa0256]
+	(No symbol) [0x0x7ff709aa050c]
+	(No symbol) [0x0x7ff709af3887]
+	(No symbol) [0x0x7ff709ac84af]
+	(No symbol) [0x0x7ff709af065c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:26:28,003 - WARNING - nara1.kr/art/search.htm: 로그인 실패
+2025-07-08 09:26:48,378 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:26:51,473 - INFO - nara1.kr/art/search.htm: 검색 테스트 완료
+2025-07-08 09:26:51,524 - INFO - 테스트 시작: https://chatty.kr/search.htm
+2025-07-08 09:27:02,296 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709aa0256]
+	(No symbol) [0x0x7ff709aa050c]
+	(No symbol) [0x0x7ff709af3887]
+	(No symbol) [0x0x7ff709ac84af]
+	(No symbol) [0x0x7ff709af065c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:27:02,296 - WARNING - chatty.kr/search.htm: 로그인 실패
+2025-07-08 09:27:22,676 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:27:25,921 - INFO - chatty.kr/search.htm: 검색 테스트 완료
+2025-07-08 09:27:25,973 - INFO - 테스트 시작: https://admin88.asadal.com/chat/search.htm
+2025-07-08 09:27:28,811 - ERROR - admin88.asadal.com/chat/search.htm 테스트 중 오류 발생: Alert Text: 암호가 일치하지 않습니다.
+Message: unexpected alert open: {Alert text : 암호가 일치하지 않습니다.}
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709af110c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:27:28,884 - INFO - 테스트 시작: https://admin.asadal.com/chat/search.htm
+2025-07-08 09:27:31,195 - ERROR - admin.asadal.com/chat/search.htm 테스트 중 오류 발생: Alert Text: 아이디나 암호가 잘못되었습니다 [ 1 / 5 ]회 로그인 시도~.
+Message: unexpected alert open: {Alert text : 아이디나 암호가 잘못되었습니다 [ 1 / 5 ]회 로그인 시도~.}
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709af110c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:27:31,340 - INFO - 테스트 시작: https://admin.nara1.kr/chat/search.htm
+2025-07-08 09:27:33,747 - ERROR - admin.nara1.kr/chat/search.htm 테스트 중 오류 발생: Alert Text: 암호가 일치하지 않습니다.~
+Message: unexpected alert open: {Alert text : 암호가 일치하지 않습니다.~}
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709af110c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:27:33,818 - INFO - 테스트 시작: https://admin.tago.kr/chat/search.htm
+2025-07-08 09:27:36,285 - ERROR - admin.tago.kr/chat/search.htm 테스트 중 오류 발생: Alert Text: 암호가 일치하지 않습니다.~
+Message: unexpected alert open: {Alert text : 암호가 일치하지 않습니다.~}
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709af110c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:27:36,369 - INFO - 테스트 시작: https://admin.hash.kr/chat/search.htm
+2025-07-08 09:27:45,047 - ERROR - admin.hash.kr/chat/search.htm 테스트 중 오류 발생: Alert Text: 암호가 일치하지 않습니다.~
+Message: unexpected alert open: {Alert text : 암호가 일치하지 않습니다.~}
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709af110c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:27:45,047 - INFO - 
+=== 테스트 결과 ===
+2025-07-08 09:27:45,047 - INFO - 성공한 도메인 (7):
+2025-07-08 09:27:45,047 - INFO - ✓ dev.han.kr/chat/search.htm
+2025-07-08 09:27:45,047 - INFO - ✓ test.han.kr/chat/search.htm
+2025-07-08 09:27:45,047 - INFO - ✓ ipet.han.kr/chat/search.htm
+2025-07-08 09:27:45,047 - INFO - ✓ gwangjin.han.kr/chat/search.htm
+2025-07-08 09:27:45,047 - INFO - ✓ oka.han.kr/chat/search.htm
+2025-07-08 09:27:45,047 - INFO - ✓ nara1.kr/art/search.htm
+2025-07-08 09:27:45,047 - INFO - ✓ chatty.kr/search.htm
+2025-07-08 09:27:45,047 - INFO - 
+실패한 도메인 (6):
+2025-07-08 09:27:45,047 - INFO - ✗ gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:27:45,048 - INFO - ✗ admin88.asadal.com/chat/search.htm
+2025-07-08 09:27:45,048 - INFO - ✗ admin.asadal.com/chat/search.htm
+2025-07-08 09:27:45,048 - INFO - ✗ admin.nara1.kr/chat/search.htm
+2025-07-08 09:27:45,048 - INFO - ✗ admin.tago.kr/chat/search.htm
+2025-07-08 09:27:45,048 - INFO - ✗ admin.hash.kr/chat/search.htm
+2025-07-08 09:33:04,467 - INFO - 테스트 시작: https://dev.han.kr/chat/search.htm
+2025-07-08 09:33:16,830 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:33:17,901 - INFO - dev.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:33:17,948 - INFO - 테스트 시작: https://test.han.kr/chat/search.htm
+2025-07-08 09:33:29,800 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:33:30,867 - INFO - test.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:33:30,906 - INFO - 테스트 시작: https://ipet.han.kr/chat/search.htm
+2025-07-08 09:33:42,624 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:33:43,694 - INFO - ipet.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:33:43,744 - INFO - 테스트 시작: https://gwangjin.han.kr/chat/search.htm
+2025-07-08 09:33:55,529 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:33:56,583 - INFO - gwangjin.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:33:56,619 - INFO - 테스트 시작: https://oka.han.kr/chat/search.htm
+2025-07-08 09:34:08,420 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:34:09,493 - INFO - oka.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:34:09,531 - INFO - 테스트 시작: https://gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:34:22,861 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:34:23,925 - INFO - gwi.asadal.com/workmanage/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:34:23,967 - INFO - 테스트 시작: https://nara1.kr/art/search.htm
+2025-07-08 09:34:29,517 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709aa0256]
+	(No symbol) [0x0x7ff709aa050c]
+	(No symbol) [0x0x7ff709af3887]
+	(No symbol) [0x0x7ff709ac84af]
+	(No symbol) [0x0x7ff709af065c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:34:29,517 - WARNING - nara1.kr/art/search.htm: 로그인 실패
+2025-07-08 09:34:39,910 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:34:40,981 - INFO - nara1.kr/art/search.htm: 검색 테스트 완료
+2025-07-08 09:34:41,016 - INFO - 테스트 시작: https://chatty.kr/search.htm
+2025-07-08 09:34:46,249 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709aa0256]
+	(No symbol) [0x0x7ff709aa050c]
+	(No symbol) [0x0x7ff709af3887]
+	(No symbol) [0x0x7ff709ac84af]
+	(No symbol) [0x0x7ff709af065c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:34:46,249 - WARNING - chatty.kr/search.htm: 로그인 실패
+2025-07-08 09:34:56,983 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:34:58,641 - INFO - chatty.kr/search.htm: 검색 테스트 완료
+2025-07-08 09:34:58,683 - INFO - 테스트 시작: https://admin88.asadal.com/chat/search.htm
+2025-07-08 09:35:13,013 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:35:14,083 - INFO - admin88.asadal.com/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:35:14,121 - INFO - 테스트 시작: https://admin.asadal.com/chat/search.htm
+2025-07-08 09:35:31,344 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:35:32,408 - INFO - admin.asadal.com/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:35:32,442 - INFO - 테스트 시작: https://admin.nara1.kr/chat/search.htm
+2025-07-08 09:35:44,505 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:35:45,564 - INFO - admin.nara1.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:35:45,620 - INFO - 테스트 시작: https://admin.tago.kr/chat/search.htm
+2025-07-08 09:35:58,037 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:35:59,108 - INFO - admin.tago.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:35:59,151 - INFO - 테스트 시작: https://admin.hash.kr/chat/search.htm
+2025-07-08 09:36:17,868 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:36:18,932 - INFO - admin.hash.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:36:18,932 - INFO - 
+=== 테스트 결과 ===
+2025-07-08 09:36:18,932 - INFO - 성공한 도메인 (13):
+2025-07-08 09:36:18,932 - INFO - ✓ dev.han.kr/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ test.han.kr/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ ipet.han.kr/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ gwangjin.han.kr/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ oka.han.kr/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ nara1.kr/art/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ chatty.kr/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ admin88.asadal.com/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ admin.asadal.com/chat/search.htm
+2025-07-08 09:36:18,932 - INFO - ✓ admin.nara1.kr/chat/search.htm
+2025-07-08 09:36:18,933 - INFO - ✓ admin.tago.kr/chat/search.htm
+2025-07-08 09:36:18,933 - INFO - ✓ admin.hash.kr/chat/search.htm
+2025-07-08 09:36:18,933 - INFO - 
+실패한 도메인 (0):
+2025-07-08 09:37:10,651 - INFO - 테스트 시작: https://dev.han.kr/chat/search.htm
+2025-07-08 09:37:21,926 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:37:23,002 - INFO - dev.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:37:23,048 - INFO - 테스트 시작: https://test.han.kr/chat/search.htm
+2025-07-08 09:37:39,751 - INFO - 페이지의 모든 input 태그:
+2025-07-08 09:37:39,762 - INFO - Input 속성들: {'name': 'whereIsAsaMember', 'type': 'hidden', 'value': ''}
+2025-07-08 09:37:39,765 - INFO - Input 속성들: {'false-value': 'N', 'id': 'use_rag', 'true-value': 'Y', 'type': 'checkbox'}
+2025-07-08 09:37:39,768 - INFO - Input 속성들: {'false-value': 'N', 'id': 'llm_source', 'true-value': 'Y', 'type': 'checkbox'}
+2025-07-08 09:37:39,768 - INFO - Input 속성들: {'false-value': 'N', 'id': 'use_websearch', 'true-value': 'Y', 'type': 'checkbox'}
+2025-07-08 09:37:39,768 - INFO - Input 속성들: {'class': 'fontSizeRange', 'max': '24', 'min': '12', 'type': 'range'}
+2025-07-08 09:37:39,768 - ERROR - test.han.kr/chat/search.htm: Message: 검색 입력창을 찾을 수 없습니다.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+
+2025-07-08 09:37:39,810 - INFO - 테스트 시작: https://ipet.han.kr/chat/search.htm
+2025-07-08 09:37:50,830 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:37:51,900 - INFO - ipet.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:37:51,952 - INFO - 테스트 시작: https://gwangjin.han.kr/chat/search.htm
+2025-07-08 09:38:12,542 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D507D8F4D0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/fa2b3c544f3b5b49a5b9c827a9ac8c2f/elements
+2025-07-08 09:38:18,648 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D507D8E410>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/fa2b3c544f3b5b49a5b9c827a9ac8c2f
+2025-07-08 09:38:22,707 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D507D8FD10>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/fa2b3c544f3b5b49a5b9c827a9ac8c2f
+2025-07-08 09:38:26,760 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D507D9C2D0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/fa2b3c544f3b5b49a5b9c827a9ac8c2f
+2025-07-08 09:39:18,864 - INFO - 도메인 열기: https://dev.han.kr/chat/search.htm
+2025-07-08 09:39:19,135 - INFO - 도메인 열기: https://test.han.kr/chat/search.htm
+2025-07-08 09:39:19,351 - INFO - 도메인 열기: https://ipet.han.kr/chat/search.htm
+2025-07-08 09:39:19,542 - INFO - 도메인 열기: https://gwangjin.han.kr/chat/search.htm
+2025-07-08 09:39:19,734 - INFO - 도메인 열기: https://oka.han.kr/chat/search.htm
+2025-07-08 09:39:20,100 - INFO - 도메인 열기: https://gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:39:21,123 - INFO - 도메인 열기: https://nara1.kr/art/search.htm
+2025-07-08 09:39:21,841 - INFO - 도메인 열기: https://chatty.kr/search.htm
+2025-07-08 09:39:22,098 - INFO - 도메인 열기: https://admin88.asadal.com/chat/search.htm
+2025-07-08 09:39:22,292 - INFO - 도메인 열기: https://admin.asadal.com/chat/search.htm
+2025-07-08 09:39:22,512 - INFO - 도메인 열기: https://admin.nara1.kr/chat/search.htm
+2025-07-08 09:39:22,851 - INFO - 도메인 열기: https://admin.tago.kr/chat/search.htm
+2025-07-08 09:39:29,785 - INFO - 도메인 열기: https://admin.hash.kr/chat/search.htm
+2025-07-08 09:39:31,803 - INFO - 테스트 시작: dev.han.kr/chat/search.htm
+2025-07-08 09:39:43,649 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:39:44,717 - INFO - dev.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:39:44,733 - INFO - 테스트 시작: test.han.kr/chat/search.htm
+2025-07-08 09:39:59,703 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:40:00,771 - INFO - test.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:40:00,784 - INFO - 테스트 시작: ipet.han.kr/chat/search.htm
+2025-07-08 09:40:12,358 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:40:13,424 - INFO - ipet.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:40:13,438 - INFO - 테스트 시작: gwangjin.han.kr/chat/search.htm
+2025-07-08 09:40:24,983 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:40:26,043 - INFO - gwangjin.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:40:26,072 - INFO - 테스트 시작: oka.han.kr/chat/search.htm
+2025-07-08 09:40:37,703 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:40:38,777 - INFO - oka.han.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:40:38,792 - INFO - 테스트 시작: gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:40:51,690 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:40:52,755 - INFO - gwi.asadal.com/workmanage/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:40:52,767 - INFO - 테스트 시작: nara1.kr/art/search.htm
+2025-07-08 09:40:57,332 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709aa0256]
+	(No symbol) [0x0x7ff709aa050c]
+	(No symbol) [0x0x7ff709af3887]
+	(No symbol) [0x0x7ff709ac84af]
+	(No symbol) [0x0x7ff709af065c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:40:57,332 - WARNING - nara1.kr/art/search.htm: 로그인 실패
+2025-07-08 09:41:07,773 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:41:08,854 - INFO - nara1.kr/art/search.htm: 검색 테스트 완료
+2025-07-08 09:41:08,870 - INFO - 테스트 시작: chatty.kr/search.htm
+2025-07-08 09:41:13,429 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709c96f95+76917]
+	GetHandleVerifier [0x0x7ff709c96ff0+77008]
+	(No symbol) [0x0x7ff709a49dea]
+	(No symbol) [0x0x7ff709aa0256]
+	(No symbol) [0x0x7ff709aa050c]
+	(No symbol) [0x0x7ff709af3887]
+	(No symbol) [0x0x7ff709ac84af]
+	(No symbol) [0x0x7ff709af065c]
+	(No symbol) [0x0x7ff709ac8243]
+	(No symbol) [0x0x7ff709a91431]
+	(No symbol) [0x0x7ff709a921c3]
+	GetHandleVerifier [0x0x7ff709f6d2cd+3051437]
+	GetHandleVerifier [0x0x7ff709f67923+3028483]
+	GetHandleVerifier [0x0x7ff709f858bd+3151261]
+	GetHandleVerifier [0x0x7ff709cb185e+185662]
+	GetHandleVerifier [0x0x7ff709cb971f+218111]
+	GetHandleVerifier [0x0x7ff709c9fb14+112628]
+	GetHandleVerifier [0x0x7ff709c9fcc9+113065]
+	GetHandleVerifier [0x0x7ff709c86c98+10616]
+	BaseThreadInitThunk [0x0x7ff9dfe9259d+29]
+	RtlUserThreadStart [0x0x7ff9e0baaf78+40]
+
+2025-07-08 09:41:13,430 - WARNING - chatty.kr/search.htm: 로그인 실패
+2025-07-08 09:41:24,279 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:41:25,499 - INFO - chatty.kr/search.htm: 검색 테스트 완료
+2025-07-08 09:41:25,519 - INFO - 테스트 시작: admin88.asadal.com/chat/search.htm
+2025-07-08 09:41:37,950 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:41:39,025 - INFO - admin88.asadal.com/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:41:39,046 - INFO - 테스트 시작: admin.asadal.com/chat/search.htm
+2025-07-08 09:41:56,065 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:41:57,128 - INFO - admin.asadal.com/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:41:57,144 - INFO - 테스트 시작: admin.nara1.kr/chat/search.htm
+2025-07-08 09:42:09,435 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:42:10,518 - INFO - admin.nara1.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:42:10,535 - INFO - 테스트 시작: admin.tago.kr/chat/search.htm
+2025-07-08 09:42:22,954 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:42:24,016 - INFO - admin.tago.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:42:24,034 - INFO - 테스트 시작: admin.hash.kr/chat/search.htm
+2025-07-08 09:42:38,412 - INFO - 검색창 발견 (선택자: input[type="text"])
+2025-07-08 09:42:39,495 - INFO - admin.hash.kr/chat/search.htm: 검색 테스트 완료
+2025-07-08 09:42:39,495 - INFO - 
+=== 테스트 결과 ===
+2025-07-08 09:42:39,495 - INFO - 성공한 도메인 (13):
+2025-07-08 09:42:39,495 - INFO - ✓ dev.han.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ test.han.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ ipet.han.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ gwangjin.han.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ oka.han.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ gwi.asadal.com/workmanage/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ nara1.kr/art/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ chatty.kr/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ admin88.asadal.com/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ admin.asadal.com/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ admin.nara1.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ admin.tago.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - ✓ admin.hash.kr/chat/search.htm
+2025-07-08 09:42:39,495 - INFO - 
+실패한 도메인 (0):
+2025-07-08 13:15:49,918 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/f067b9f5c4acbc63b0d187a65079472e
+2025-07-08 13:15:53,969 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E1755F8110>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/f067b9f5c4acbc63b0d187a65079472e
+2025-07-08 13:15:58,019 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E1755F8650>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/f067b9f5c4acbc63b0d187a65079472e
